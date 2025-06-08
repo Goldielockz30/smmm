@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: Goldielockz30/smmm
+  branch: main
+  auth_type: implicit
+  app_id: Ov23liV69YJtcmMBqxfo
+
+media_folder: "assets/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }

@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: Goldielockz30/mizz-media-pro
+  branch: main
+  auth_type: implicit
+  app_id: zom0RPYQzv4LRJ3kj414Aom8jH1ME8OV
+
+media_folder: "assets/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
